@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ap_main" prefHeight="396" prefWidth="478" style="-fx-background-color: #3e3f5c; -fx-border-color: #6d6c75;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clientjavafxchat.HelloController">
+    <children>
+        <Button fx:id="button_send" layoutX="404" layoutY="338" style="-fx-background-color: #5e5f8a; -fx-background-radius: 10; -fx-border-color: abb2d1; -fx-border-radius: 10;" text="Send" textFill="#abb2d1" />
+        <TextField fx:id="tf_message" layoutX="30" layoutY="338" prefHeight="26" prefWidth="361" style="-fx-background-color: abb2d1;" />
+        <ScrollPane fx:id="sp_main" fitToWidth="true" layoutX="30" layoutY="70" prefHeight="250.0" prefWidth="418">
+            <content>
+                <VBox fx:id="vbox_messages" prefHeight="248" prefWidth="403.0" style="-fx-background-color: abb2d1;" />
+            </content>
+        </ScrollPane>
+        <Label layoutX="177.0" layoutY="26.0" text="Messanger" textFill="#abb2d1">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="23" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
